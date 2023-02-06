@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1>Xos gelmisen brat 🫣 <sub>by NuranImanov</sub></h1>
+    <div class="game-content">
+      <div class="game-container">
+        <svg height="250" width="200" class="figure-container">
+          <!-- Rod -->
+          <line x1="20" y1="230" x2="60" y2="230" class="figure-part" />
+          <!-- 1 chance -->
+          <line x1="60" y1="230" x2="100" y2="230" class="figure-part" />
+          <!-- 2 chance -->
+          <line x1="60" y1="115" x2="60" y2="230" class="figure-part" />
+          <!-- 3 chance -->
+          <line x1="60" y1="20" x2="60" y2="115" class="figure-part" />
+          <!-- 4 chance -->
+          <line x1="60" y1="20" x2="100" y2="20" class="figure-part" />
+          <!-- 5 chance -->
+          <line x1="100" y1="20" x2="140" y2="20" class="figure-part" />
+          <!-- 6 chance -->
+          <line x1="140" y1="20" x2="140" y2="50" class="figure-part" />
+          <!-- 7 chance -->
+          <!-- Head -->
+          <circle cx="140" cy="70" r="20" class="figure-part" />
+          <!-- 8 chance -->
+          <!-- Body -->
+          <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+          <!-- 9 chance -->
+          <!-- Arms -->
+          <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+          <!-- 10 chance -->
+          <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+          <!-- 11 chance -->
+          <!-- Legs -->
+          <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+          <!-- 12 chance -->
+          <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+          <!-- 13 chance -->
+        </svg>
+      </div>
+      <div class="game-instruction">
+        <h2>
+          13 haqqin var tutdurdun hec bisey tutdurmasan axiretde yanassan :D
+        </h2>
+        <div class="wrong-letters-container">
+          <div id="wrong-letters"></div>
+        </div>
+        <div class="word" id="word"></div>
+      </div>
+    </div>
+    <div class="popup-container" id="popup-container">
+      <div class="popup">
+        <h2 id="final-message"></h2>
+        <button id="play-button">
+          Yeniden oynamaq ucun: 0.40 Azn (Yol pulu qalxibdi)
+        </button>
+      </div>
+    </div>
+    <div class="notification-container" id="notification-container">
+      <p>Basmisanda bunu n qeder duyme var basqasina bas</p>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
